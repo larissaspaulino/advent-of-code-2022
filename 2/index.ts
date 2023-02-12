@@ -1,4 +1,4 @@
-const { getInput } = require('../utils')
+import { getInput } from '../utils'
 
 const file = getInput(2)
 
@@ -29,10 +29,11 @@ const scores = arr.map(
 const result = scores.reduce(
   (accumulator, currentValue) => accumulator + currentValue
 )
+console.log(result)
 
 // PART 2
 
-const outcomeScoresPartTwo = { X: 0, Y: 3, Z: 5 }
+const outcomeScoresPartTwo = { X: 0, Y: 3, Z: 6 }
 
 const shapePartTwo = {
   X: { A: 3, B: 1, C: 2 },
@@ -49,3 +50,5 @@ const scores2 = arr.map(
 const result2 = scores2.reduce(
   (accumulator, currentValue) => accumulator + currentValue
 )
+
+console.log(result2)
